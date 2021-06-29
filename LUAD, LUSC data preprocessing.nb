@@ -1,0 +1,120 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3959,        112]
+NotebookOptionsPosition[      3501,         96]
+NotebookOutlinePosition[      3912,        113]
+CellTagsIndexPosition[      3869,        110]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", "\:6e05\:9664\:5b9a\:4e49", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Clear", "[", "\"\<Global`*\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", "\:8bbe\:7f6e\:76ee\:5f55", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"SetDirectory", "[", 
+     RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", "\:7ec8\:6b62\:5185\:6838", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"CloseKernels", "[", "]"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", "\:542f\:52a8\:5185\:6838", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"LaunchKernels", "[", "12", "]"}], ";"}]}]}]], "Input",
+ CellLabel->"In[43]:=",ExpressionUUID->"761d267c-a991-4f4c-b741-d1eca87b79b1"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"a", ",", "b"}], "}"}], "=", 
+   RowBox[{"Import", "/@", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<TCGA/LU/all.csv\>\"", ",", "\"\<TCGA/LU/all_yOrigin.csv\>\""}], 
+     "}"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"\"\<TCGA/LUAD/all.csv\>\"", ",", 
+    RowBox[{"Join", "[", 
+     RowBox[{
+      RowBox[{"a", "\[LeftDoubleBracket]", 
+       RowBox[{"{", "1", "}"}], "\[RightDoubleBracket]"}], ",", 
+      RowBox[{"a", "\[LeftDoubleBracket]", 
+       RowBox[{"2", ";;", "226"}], "\[RightDoubleBracket]"}]}], "]"}]}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"\"\<TCGA/LUAD/all_yOrigin.csv\>\"", ",", 
+    RowBox[{"Join", "[", 
+     RowBox[{
+      RowBox[{"b", "\[LeftDoubleBracket]", 
+       RowBox[{"{", "1", "}"}], "\[RightDoubleBracket]"}], ",", 
+      RowBox[{"b", "\[LeftDoubleBracket]", 
+       RowBox[{"2", ";;", "226"}], "\[RightDoubleBracket]"}]}], "]"}]}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"\"\<TCGA/LUSC/all.csv\>\"", ",", 
+    RowBox[{"Join", "[", 
+     RowBox[{
+      RowBox[{"a", "\[LeftDoubleBracket]", 
+       RowBox[{"{", "1", "}"}], "\[RightDoubleBracket]"}], ",", 
+      RowBox[{"a", "\[LeftDoubleBracket]", 
+       RowBox[{"227", ";;", "All"}], "\[RightDoubleBracket]"}]}], "]"}]}], 
+   "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"\"\<TCGA/LUSC/all_yOrigin.csv\>\"", ",", 
+    RowBox[{"Join", "[", 
+     RowBox[{
+      RowBox[{"b", "\[LeftDoubleBracket]", 
+       RowBox[{"{", "1", "}"}], "\[RightDoubleBracket]"}], ",", 
+      RowBox[{"b", "\[LeftDoubleBracket]", 
+       RowBox[{"227", ";;", "All"}], "\[RightDoubleBracket]"}]}], "]"}]}], 
+   "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.8319556488497686`*^9, 3.831955754309746*^9}, {
+  3.831955876498952*^9, 3.831955921583276*^9}, {3.8319559538925643`*^9, 
+  3.831955961040925*^9}, {3.8336249895819373`*^9, 
+  3.833624992957441*^9}},ExpressionUUID->"f34a6443-7a85-4ffa-b042-\
+1505f372ea14"]
+},
+WindowSize->{1904, 989},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (2020\:5e747\:670815\
+\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"494c01d4-c87f-447b-b5e8-db03ef5c6c79"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 817, 18, 255, "Input",ExpressionUUID->"761d267c-a991-4f4c-b741-d1eca87b79b1"],
+Cell[1378, 40, 2119, 54, 207, "Input",ExpressionUUID->"f34a6443-7a85-4ffa-b042-1505f372ea14"]
+}
+]
+*)
+
